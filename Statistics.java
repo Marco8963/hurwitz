@@ -2,6 +2,7 @@ import java.io.IOException;
 
 public class Statistics {
     public static void main(String[] args) throws IOException, InterruptedException {
+        System.exit(1);
         HurwitzClassNumberGenerator g = new HurwitzClassNumberGenerator(2, "result");
         g.generate(Util.getPrimeRange(30, 100), 0, 100_000_000L);
         // g.clean();
